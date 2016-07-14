@@ -35,6 +35,8 @@ Rake::TestTask.new('test:all') do |task|
   ]
 end
 
+task default: 'test:example2'
+
 # require 'rake/testtask'
 # desc 'Run all measure tests'
 # Rake::TestTask.new('test:allofem') do |task|
@@ -42,7 +44,8 @@ end
 #   task.test_files = FileList['measures/*/test/test_*.rb']
 # end
 
-=beginrequire 'rubocop/rake_task'
+=begin
+require 'rubocop/rake_task'
 desc 'Check the code for style consistency'
 RuboCop::RakeTask.new(:run_rubocop) do |task|
   task.options = ['--no-color', '--out=rubocop-results.xml']
