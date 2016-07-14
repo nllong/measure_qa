@@ -22,18 +22,18 @@ gem install bundler
 # install dependencies for the non-docker portion
 bundle install
 
-#rake test:example2
+rake test:example2
 #bundle exec rake run_rubocop
 
 # test crap
 #echo eval "$(cd "$(ruby -e "puts File.join(ENV[:CIRCLE_ARTIFACTS.to_s], :coveralls.to_s)")" && ls -al)"
 
-case $CIRCLE_NODE_INDEX in
-  0)
-    rake test:example2
-    #rake test:rubocop
-    #rake test:gem_group_0
-    ;;
+# case $CIRCLE_NODE_INDEX in
+#   0)
+#     rake test:example2
+#     #rake test:rubocop
+#     #rake test:gem_group_0
+#    ;;
 #   1)
 #     rake test:gem_group_1
 #     ;;
@@ -44,7 +44,7 @@ case $CIRCLE_NODE_INDEX in
 #     rake test:gem_group_3
 #     ;;
 #   *)
-esac
+#esac
     
 # Loop through the test files and run
 # every nth test, where n is determined
