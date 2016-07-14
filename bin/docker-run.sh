@@ -15,15 +15,14 @@ eval "$(rbenv init -)"
 
 cd /measure_qa
 
-# test crap
-echo "RUBYLIB = $RUBYLIB"
-
+# Make sure the gem and bundler are installed
 gem update --system
 gem install bundler
-bundle update
+
+# install dependencies for the non-docker portion
 bundle install
 
-rake test:example2
+#rake test:example2
 #bundle exec rake run_rubocop
 
 # test crap
