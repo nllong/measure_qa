@@ -3,8 +3,8 @@ source 'http://rubygems.org'
 # Specify your gem's dependencies in openstudio-standards.gemspec
 # gemspec
 gem 'rake', '~> 11.0'
-gem 'simplecov', :require => false, :group => :test # added RPG
-gem 'coveralls', require: false
+gem 'simplecov'
+gem 'coveralls'
 gem 'test-unit', '2.0.0'
 gem 'minitest'
 gem 'minitest-reporters'
