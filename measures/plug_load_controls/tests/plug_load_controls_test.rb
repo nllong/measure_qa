@@ -1,6 +1,7 @@
+require_relative '../../../test/test_helper'
+
 require 'openstudio'
 require 'openstudio/ruleset/ShowRunnerOutput'
-require 'minitest/autorun'
 
 require_relative '../measure.rb'
 

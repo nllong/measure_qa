@@ -1,10 +1,9 @@
-require_relative '../../../test/test_helper' # Will need to fix for actual dir structure...
-require 'minitest/autorun'
+require_relative '../../../test/test_helper'
 
 require 'openstudio'
 require 'openstudio/ruleset/ShowRunnerOutput'
 
-require "#{File.dirname(__FILE__)}/../measure.rb"
+require_relative "../measure.rb"
 
 class AedgOfficeSwh_Test < MiniTest::Test
 

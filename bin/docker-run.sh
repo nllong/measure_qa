@@ -15,11 +15,7 @@ eval "$(rbenv init -)"
 
 cd /measure_qa
 
-# Make sure the gem and bundler are installed
-gem update --system
-gem install bundler
-
-# install dependencies for the non-docker portion
+# install dependencies for the docker portion
 bundle install
 
 rake test:example2
