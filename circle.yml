@@ -34,9 +34,9 @@ test:
     #    parallel: true
     #- ls $CIRCLE_TEST_REPORTS/minitest:
     #    parallel: true
-    - rsync -av /measure_qa/test/reports/ $CIRCLE_TEST_REPORTS/minitest/:
+    - rsync -av /measure_qa/test/reports/ $CIRCLE_ARTIFACTS/minitest/:
         parallel: true
-    - rsync -av /measure_qa/coverage/ $CIRCLE_TEST_REPORTS/coverage/:
+    - rsync -av /measure_qa/coverage/ $CIRCLE_ARTIFACTS/coverage/:
         parallel: true
 
 notify: 
