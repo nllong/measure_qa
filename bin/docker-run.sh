@@ -5,6 +5,7 @@ export CIRCLECI=true
 export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
 
+ruby -ropenstudio -e 'require "openstudio"; puts OpenStudio.openStudioLongVersion'
 # test crap
 #echo eval "$(cd "$(ruby -e "puts File.join(ENV[:CIRCLE_ARTIFACTS.to_s], :coveralls.to_s)")" && ls -al)"
 
